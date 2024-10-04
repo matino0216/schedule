@@ -4,7 +4,7 @@
 - 일정 생성
 - 일정 조회
     - 전체 목록 조회
-    - 조건별 목록 조회
+    - 선택 목록 조회
 - 일정 수정
 - 일정 삭제
 
@@ -17,13 +17,13 @@
 - **RequestBody**: { "title":"제목", "content":"내용", "writer":"작성자명", "password":"비밀번호" }
 - **ResponseBody**: { "id": 1, "title": "제목", "content": "내용", "writer": "작성자명", "createdAt": "YYYY-MM-DD hh:mm:ss", "updatedAt": "YYYY-MM-DD hh:mm:ss" }
 
-## 전체 조회
+## 전체 목록 조회
 - **Method**: GET
 - **URL**: /api/schedule
 - **RequestBody**: { "writer": "작성자명", "updatedAt": "YYYY-MM-DD hh:mm:ss" }
 - **ResponseBody**: { "id": 1, "title": "제목", "content": "내용", "writer": "작성자명", "createdAt": "YYYY-MM-DD hh:mm:ss", "updatedAt": "YYYY-MM-DD hh:mm:ss" }
 
-## 선택 조회
+## 선택 목록 조회
 - **Method**: GET
 - **URL**: /api/schedule/{id}
 - **ResponseBody**: { "id": 1, "title": "제목", "content": "내용", "writer": "작성자명", "createdAt": "YYYY-MM-DD hh:mm:ss", "updatedAt": "YYYY-MM-DD hh:mm:ss" }
